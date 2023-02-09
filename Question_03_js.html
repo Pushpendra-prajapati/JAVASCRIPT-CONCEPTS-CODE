@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+      // Methods
+      // methods are functions that are stored as object properties.
+
+      function person(name, course){
+        this.name = name;
+        this.course = course;
+        this.changeName = function(name){
+            this.name = name;
+        }
+      }
+      let dinesh = new person("Dinesh", "BA");
+      document.write(dinesh.name);
+      dinesh.changeName("Rohan");
+      document.write(dinesh.name);
+    
+      function information(name, age){
+        this.name = name;
+        this.age = age;
+        this.yearofBirth = bornYear;
+      }
+      function bornYear(){
+        return 2023 - this.age;
+      }
+
+      let pushpendra = new information("Pushpendra", 20);
+      document.write(pushpendra.yearofBirth());
+
+   </script> 
+</body>
+</html>
