@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="data" />C
+    <br />
+    <button onclick="convert()">convert</button>
+    <h1 id="result"></h1>
+
+    <script>
+      //Convert celsius to fahrenheit JavaScript function ?
+      function convert() {
+        let celsiusValue = document.getElementById("data").value;
+        let convertF = celsiusValue * 1.8 + 32;
+        document.getElementById(
+          "result"
+        ).innerText = `${celsiusValue} C = ${convertF} F`;
+      }
+    </script>
+  </body>
+</html>
